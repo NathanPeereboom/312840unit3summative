@@ -1,0 +1,56 @@
+﻿<!-- Nathan Peereboom
+    May 20, 2020
+    Unit 3 Summative. Scrabble word generator. Uses unedited ScrabbleGame and ScrabbleLetter Classes by Mr McTavish. -->
+    <Window x:Class="_312840unit3summative.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_312840unit3summative"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Button x:Name="btnGenerate" Click="btnGenerate_Click">Generate</Button>
+        <StackPanel x:Name="spTiles" Orientation="Horizontal">
+            <StackPanel x:Name="spTilesHeader">
+                <Label>Tile</Label>
+                <Label>Value</Label>
+            </StackPanel>
+            <StackPanel>
+                <Label x:Name="lblTile0"/>
+                <Label x:Name="lblValue0"/>
+            </StackPanel>
+            <StackPanel>
+                <Label x:Name="lblTile1"/>
+                <Label x:Name="lblValue1"/>
+            </StackPanel>
+            <StackPanel>
+                <Label x:Name="lblTile2"/>
+                <Label x:Name="lblValue2"/>
+            </StackPanel>
+            <StackPanel>
+                <Label x:Name="lblTile3"/>
+                <Label x:Name="lblValue3"/>
+            </StackPanel>
+            <StackPanel>
+                <Label x:Name="lblTile4"/>
+                <Label x:Name="lblValue4"/>
+            </StackPanel>
+            <StackPanel>
+                <Label x:Name="lblTile5"/>
+                <Label x:Name="lblValue5"/>
+            </StackPanel>
+            <StackPanel>
+                <Label x:Name="lblTile6"/>
+                <Label x:Name="lblValue6"/>
+            </StackPanel>
+        </StackPanel>
+        <Label x:Name="lblWordHeader">Words (Value)</Label>
+        <Label x:Name="lblWords"/>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btnBackPage" Click="btnBackPage_Click">Back</Button>
+            <Label x:Name="lblPageNumber"/>
+            <Button x:Name="btnNextPage" Click="btnNextPage_Click">Next</Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
